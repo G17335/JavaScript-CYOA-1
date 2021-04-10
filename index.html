@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Choose your Own Adventure Story</title>
+    <link rel='stylesheet' href='style.css'>
+    <link rel= 'stylesheet'                          href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css'>
+  </head>
+  <body>
+    <div id="first-section1">
+      <hi id="intro-text">A New Normal</h1>
+      <h4 id="intro-text">An Interactive Story</h4>
+    </div>
+    <div id="first-section2">
+      <div class="center-align container">
+        <h5 id ="intro-text"><b>Click the button to begin the story</b></h5>
+        <button class="btn-large waves-effect waves-light" onclick="start()">Start</button>
+      </div>
+    </div>
+
+    <div class="scale-transition scale-out" id="part1"> -
+      <div class="center-align container">
+        <img src="https://www.washingtonpost.com/resizer/ahl9OrgfUPFD5jWrjJNsHZ0HiC4=/1484x0/arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/3UUG4JSEFMI6VGOHDX6UEQNC7Y.jpg" id="pictures">
+        <p id=part1text class="flow-text">It's 9am on a Saturday morning. You wake up to see your mother watching the local news, You sat down with her to watch the news together. 
+        </p>
+        <p id =quote class="flow-text">
+        <i><b>In the morning news, you hear that there is a cluster of COVID-19 cases in your area.</b></i>
+        </p>
+        <p id=part1text class="flow-text">
+        You slowly come to a realization that you made plans to go to a meeting with your friends. 
+        </p>
+        <button class="btn-large waves-effect waves-light" onclick="home1()">Call your friends and encourage them to stay home.</button>
+        <button class="btn-large waves-effect waves-light" onclick="out1()">Go with your friends and take the precautions necessary.</button>
+      </div>
+    </div>  
+
+    <div class= "scale-transition scale-out" id ="part2">
+      <div class="center-align container">
+        <img src="https://us.123rf.com/450wm/niradj/niradj2003/niradj200300049/143670291-stock-vector-people-stay-at-home-social-distancing.jpg?ver=6" id="pictures">
+        <p id=part2text class="flow-text">Your friends go without you and you stayed at home safe from the virus.</p>
+        <p id= quote class="flow-text">They ask you to join them next week. What do you do?</p>
+        <p id= class="flow-text"></p>
+        <button class="btn-large waves-effect waves-light" onclick="home2()">Say that you'd rather stay safe and have an online meeting instead.</button>
+        <button class="btn-large waves-effect waves-light" onclick="out2()">Go with them this time. </button>
+      </div>
+    </div>
+
+    <div class="scale-transition scale-out" id ="part3">
+      <div class="center-align container">
+        <img src="https://wordstream-files-prod.s3.amazonaws.com/s3fs-public/styles/simple_image/public/images/media/images/best-practices-stock-photos-group-of-friends.jpg?SEi4QwkjEtRRvofqbSM5zMJWLQXZbU_f&itok=eo8HirLs" id="pictures">
+        <p id=part3text class="flow-text">You have a wonderful time hanging out with them.</p>
+        <p id= quote class="flow-text">They told you take your mask off and you obliged since they were not sick.</p>
+        <p id= part3text class="flow-text">The following morning you felt a bit off. Your breakfast tasted bland and you couldn't smell the plants.</p>
+        <button class="btn-large waves-effect waves-light" onclick="test()">Ask your mother for you to get tested.</button>
+        <button class="btn-large waves-effect waves-light" onclick="ignore()">Just shake it off as the flu.</button>                
+      </div>
+    </div>
+
+    <div class="scale-transition scale-out" id ="end1">
+      <div class="center-align container">
+        <img src="https://www.eteknix.com/wp-content/uploads/2014/11/Depositphotos_27618619_s.jpg" id="pictures">
+        <p id="end1text" class="flow-text">All your friends agree to meet online and they had fun.</p>
+        <p id= "quote" class="flow-text">They decide to stop hanging out outside for the time being.</p>
+      <button class="btn-large waves-effect waves-light cyan" onclick="window.location.href=window.location.href">Click here to play again</button>
+      </div>
+    </div>
+
+    <div class="scale-transition scale-out" id ="lose1">
+      <div class="center-align container">
+        <img src="https://previews.123rf.com/images/tommaso79/tommaso791710/tommaso79171000032/87414303-sick-man-in-bed-measuring-temperature-and-feeling-fever.jpg" id="pictures">
+        <p id="lose1text" class="flow-text">You had a lot of fun with your friends and took your mask off when you were asked since they didn't seem sick.</p>
+        <p id= "quote" class="flow-text">You woke up the following day really sick and had to be hospitalised.</p>
+      <button class="btn-large waves-effect waves-light cyan" onclick="window.location.href=window.location.href">Click here to play again</button>
+      </div>
+    </div>
+
+    <div class="scale-transition scale-out" id ="end2">
+      <div class="center-align container">
+        <img src="https://medcitynews.com/uploads/2020/04/GettyImages-1212741800.jpg" id="pictures">
+        <p id="lose1text" class="flow-text">After being tested, you find out that you tested positive for COVID-19.</p>
+        <p id= "quote" class="flow-text">Fortunately, you were tested early and you were quarantined to prevent more positive cases and you receive treatment for your recovery.</p>
+      <button class="btn-large waves-effect waves-light cyan" onclick="window.location.href=window.location.href">Click here to play again</button>
+      </div>
+    </div>
+
+    <div class="scale-transition scale-out" id ="lose2">
+      <div class="center-align container">
+        <img src="https://herviewfromhome.com/wp-content/uploads/2018/12/shutterstock_1181842840.jpg" id="pictures">
+        <p id="lose2text" class="flow-text">After a week, you start feeling really sick and you are forced to get tested and you are positive. Luckily for you, after another two weeks you were okay.</p>
+        <p id= "quote" class="flow-text">However, your mother also tested positive and she isn't showing signs of improving. A few weeks later, you find out that she won't be able to recover and she becomes a victim of the virus all because you hung out with your friends.</p>
+      <button class="btn-large waves-effect waves-light cyan" onclick="window.location.href=window.location.href">Click here to play again</button>
+      </div>
+    </div>
+  
+    <script src="script.js"></script>
+      </div>
+    </div>
+  </body>
+</html>
